@@ -40,6 +40,8 @@ public class Controller {
         if (password.getText().equalsIgnoreCase("java")) {
             String name = userLoginPassword.get(login.getText());
             textArea.setText("Masz na imię "+name+"?");
+        } else {
+            textArea.setText("Podaj swoje nazwisko bez polskich znaków jako login i hasło.");
         }
     }
 
